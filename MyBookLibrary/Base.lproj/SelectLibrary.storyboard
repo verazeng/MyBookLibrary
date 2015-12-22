@@ -9,7 +9,7 @@
         <!--CreateLibrary-->
         <scene sceneID="Mhv-cf-c2t">
             <objects>
-                <viewController title="CreateLibrary" id="RAp-44-FNh" sceneMemberID="viewController">
+                <viewController title="CreateLibrary" id="RAp-44-FNh" customClass="BLSelectLibraryViewController" customModule="MyBookLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Bs-vM-hX1"/>
                         <viewControllerLayoutGuide type="bottom" id="6J8-Jg-575"/>
@@ -73,6 +73,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="选择图书馆" id="vuw-47-c0i"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="libraryName" destination="cNu-Ql-5eB" id="3lg-b1-CC6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0V-kc-5uk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

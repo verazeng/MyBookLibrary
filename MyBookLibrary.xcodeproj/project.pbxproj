@@ -17,6 +17,14 @@
 		D27DAE731C16C23A00E02437 /* MyBookLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27DAE721C16C23A00E02437 /* MyBookLibraryTests.swift */; };
 		D27DAE7E1C16C23A00E02437 /* MyBookLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27DAE7D1C16C23A00E02437 /* MyBookLibraryUITests.swift */; };
 		D28341111C27F926001A2E76 /* SelectLibrary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D283410F1C27F926001A2E76 /* SelectLibrary.storyboard */; };
+		D28341191C28FECE001A2E76 /* MyBookLibrary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D28341171C28FECE001A2E76 /* MyBookLibrary.xcdatamodeld */; };
+		D283411B1C28FEF0001A2E76 /* BLLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283411A1C28FEF0001A2E76 /* BLLibraryManager.swift */; };
+		D283411D1C2904A0001A2E76 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D283411C1C2904A0001A2E76 /* CoreData.framework */; };
+		D283415D1C29067D001A2E76 /* BLSelectLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283415C1C29067D001A2E76 /* BLSelectLibraryViewController.swift */; };
+		D2DACFA91C2923CB001193C8 /* BLUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFA71C2923CB001193C8 /* BLUser+CoreDataProperties.swift */; };
+		D2DACFAA1C2923CB001193C8 /* BLUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFA81C2923CB001193C8 /* BLUser.swift */; };
+		D2DACFAD1C292629001193C8 /* BLLibrary+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFAB1C292629001193C8 /* BLLibrary+CoreDataProperties.swift */; };
+		D2DACFAE1C292629001193C8 /* BLLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFAC1C292629001193C8 /* BLLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,14 @@
 		D27DAE7D1C16C23A00E02437 /* MyBookLibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookLibraryUITests.swift; sourceTree = "<group>"; };
 		D27DAE7F1C16C23A00E02437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D28341101C27F926001A2E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SelectLibrary.storyboard; sourceTree = "<group>"; };
+		D28341181C28FECE001A2E76 /* MyBookLibrary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBookLibrary.xcdatamodel; sourceTree = "<group>"; };
+		D283411A1C28FEF0001A2E76 /* BLLibraryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLLibraryManager.swift; path = DataManagers/BLLibraryManager.swift; sourceTree = "<group>"; };
+		D283411C1C2904A0001A2E76 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D283415C1C29067D001A2E76 /* BLSelectLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLSelectLibraryViewController.swift; path = Controllers/BLSelectLibraryViewController.swift; sourceTree = "<group>"; };
+		D2DACFA71C2923CB001193C8 /* BLUser+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BLUser+CoreDataProperties.swift"; path = "Models/BLUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D2DACFA81C2923CB001193C8 /* BLUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLUser.swift; path = Models/BLUser.swift; sourceTree = "<group>"; };
+		D2DACFAB1C292629001193C8 /* BLLibrary+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BLLibrary+CoreDataProperties.swift"; path = "Models/BLLibrary+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D2DACFAC1C292629001193C8 /* BLLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLLibrary.swift; path = Models/BLLibrary.swift; sourceTree = "<group>"; };
 		DFAE82C41010D4B206537B29 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D283411D1C2904A0001A2E76 /* CoreData.framework in Frameworks */,
 				B625F849AD95198AAC491720 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +112,7 @@
 		493DB8C231A56047675461BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D283411C1C2904A0001A2E76 /* CoreData.framework */,
 				A2C40376661F6BE2EFB19295 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -125,6 +143,9 @@
 		D27DAE5A1C16C23A00E02437 /* MyBookLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				D283415B1C290647001A2E76 /* Controllers */,
+				D28341151C28FCEC001A2E76 /* Models */,
+				D28341121C28FBF8001A2E76 /* DataManagers */,
 				D27DAE5B1C16C23A00E02437 /* AppDelegate.swift */,
 				D27DAE5D1C16C23A00E02437 /* FirstViewController.swift */,
 				D27DAE5F1C16C23A00E02437 /* SecondViewController.swift */,
@@ -153,6 +174,34 @@
 				D27DAE7F1C16C23A00E02437 /* Info.plist */,
 			);
 			path = MyBookLibraryUITests;
+			sourceTree = "<group>";
+		};
+		D28341121C28FBF8001A2E76 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				D283411A1C28FEF0001A2E76 /* BLLibraryManager.swift */,
+			);
+			name = DataManagers;
+			sourceTree = "<group>";
+		};
+		D28341151C28FCEC001A2E76 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2DACFAB1C292629001193C8 /* BLLibrary+CoreDataProperties.swift */,
+				D2DACFAC1C292629001193C8 /* BLLibrary.swift */,
+				D2DACFA71C2923CB001193C8 /* BLUser+CoreDataProperties.swift */,
+				D2DACFA81C2923CB001193C8 /* BLUser.swift */,
+				D28341171C28FECE001A2E76 /* MyBookLibrary.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D283415B1C290647001A2E76 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D283415C1C29067D001A2E76 /* BLSelectLibraryViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,9 +388,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D283415D1C29067D001A2E76 /* BLSelectLibraryViewController.swift in Sources */,
+				D2DACFA91C2923CB001193C8 /* BLUser+CoreDataProperties.swift in Sources */,
+				D28341191C28FECE001A2E76 /* MyBookLibrary.xcdatamodeld in Sources */,
+				D2DACFAD1C292629001193C8 /* BLLibrary+CoreDataProperties.swift in Sources */,
 				D27DAE601C16C23A00E02437 /* SecondViewController.swift in Sources */,
+				D2DACFAA1C2923CB001193C8 /* BLUser.swift in Sources */,
+				D283411B1C28FEF0001A2E76 /* BLLibraryManager.swift in Sources */,
 				D27DAE5C1C16C23A00E02437 /* AppDelegate.swift in Sources */,
 				D27DAE5E1C16C23A00E02437 /* FirstViewController.swift in Sources */,
+				D2DACFAE1C292629001193C8 /* BLLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +657,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D28341171C28FECE001A2E76 /* MyBookLibrary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D28341181C28FECE001A2E76 /* MyBookLibrary.xcdatamodel */,
+			);
+			currentVersion = D28341181C28FECE001A2E76 /* MyBookLibrary.xcdatamodel */;
+			name = MyBookLibrary.xcdatamodeld;
+			path = Models/MyBookLibrary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D27DAE501C16C23A00E02437 /* Project object */;
 }

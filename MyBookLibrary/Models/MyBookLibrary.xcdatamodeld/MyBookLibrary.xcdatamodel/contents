@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15A284" minimumToolsVersion="Xcode 7.0">
+    <entity name="BLBook" syncable="YES">
+        <attribute name="identifier" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="BLLibrary" representedClassName=".BLLibrary" syncable="YES">
+        <attribute name="identifier" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="books" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BLBook" syncable="YES"/>
+        <relationship name="users" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BLUser" syncable="YES"/>
+    </entity>
+    <entity name="BLUser" representedClassName=".BLUser" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BLBook" positionX="88" positionY="-49" width="128" height="58"/>
+        <element name="BLLibrary" positionX="-117" positionY="-52" width="128" height="103"/>
+        <element name="BLUser" positionX="-119" positionY="108" width="128" height="103"/>
+    </elements>
+</model>
