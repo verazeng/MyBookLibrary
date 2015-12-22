@@ -15,6 +15,7 @@
 		D27DAE681C16C23A00E02437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27DAE661C16C23A00E02437 /* LaunchScreen.storyboard */; };
 		D27DAE731C16C23A00E02437 /* MyBookLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27DAE721C16C23A00E02437 /* MyBookLibraryTests.swift */; };
 		D27DAE7E1C16C23A00E02437 /* MyBookLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27DAE7D1C16C23A00E02437 /* MyBookLibraryUITests.swift */; };
+		D28341111C27F926001A2E76 /* SelectLibrary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D283410F1C27F926001A2E76 /* SelectLibrary.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D27DAE791C16C23A00E02437 /* MyBookLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBookLibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27DAE7D1C16C23A00E02437 /* MyBookLibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookLibraryUITests.swift; sourceTree = "<group>"; };
 		D27DAE7F1C16C23A00E02437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D28341101C27F926001A2E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SelectLibrary.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				D27DAE5D1C16C23A00E02437 /* FirstViewController.swift */,
 				D27DAE5F1C16C23A00E02437 /* SecondViewController.swift */,
 				D27DAE611C16C23A00E02437 /* Main.storyboard */,
+				D283410F1C27F926001A2E76 /* SelectLibrary.storyboard */,
 				D27DAE641C16C23A00E02437 /* Assets.xcassets */,
 				D27DAE661C16C23A00E02437 /* LaunchScreen.storyboard */,
 				D27DAE691C16C23A00E02437 /* Info.plist */,
@@ -196,6 +199,7 @@
 				TargetAttributes = {
 					D27DAE571C16C23A00E02437 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 7H4G4N5C84;
 					};
 					D27DAE6D1C16C23A00E02437 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -232,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D28341111C27F926001A2E76 /* SelectLibrary.storyboard in Resources */,
 				D27DAE681C16C23A00E02437 /* LaunchScreen.storyboard in Resources */,
 				D27DAE651C16C23A00E02437 /* Assets.xcassets in Resources */,
 				D27DAE631C16C23A00E02437 /* Main.storyboard in Resources */,
@@ -311,6 +316,14 @@
 				D27DAE671C16C23A00E02437 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D283410F1C27F926001A2E76 /* SelectLibrary.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D28341101C27F926001A2E76 /* Base */,
+			);
+			name = SelectLibrary.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -403,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MyBookLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = verazeng.MyBookLibrary;
@@ -414,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MyBookLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = verazeng.MyBookLibrary;
@@ -488,6 +503,7 @@
 				D27DAE841C16C23A00E02437 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D27DAE851C16C23A00E02437 /* Build configuration list for PBXNativeTarget "MyBookLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +512,7 @@
 				D27DAE871C16C23A00E02437 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D27DAE881C16C23A00E02437 /* Build configuration list for PBXNativeTarget "MyBookLibraryUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +521,7 @@
 				D27DAE8A1C16C23A00E02437 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

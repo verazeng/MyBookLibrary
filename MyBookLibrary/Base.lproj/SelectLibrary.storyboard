@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O5y-Fs-oXs">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--CreateLibrary-->
+        <scene sceneID="Mhv-cf-c2t">
+            <objects>
+                <viewController title="CreateLibrary" id="RAp-44-FNh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Bs-vM-hX1"/>
+                        <viewControllerLayoutGuide type="bottom" id="6J8-Jg-575"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mjZ-hj-Sjq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hcT-lU-vTT">
+                                <rect key="frame" x="31" y="264" width="313" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2fw-N3-VON">
+                                        <rect key="frame" x="60" y="0.0" width="194" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="馆名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVz-MT-HZU">
+                                                <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cNu-Ql-5eB">
+                                                <rect key="frame" x="44" y="0.0" width="150" height="30"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="NLh-7A-rSo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="eKa-qJ-Khm">
+                                        <rect key="frame" x="104" y="40" width="105" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKO-VH-9lf">
+                                                <rect key="frame" x="0.0" y="0.0" width="105" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="进入现有图书馆"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOu-Zc-wry">
+                                                <rect key="frame" x="0.0" y="30" width="105" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="创建新的图书馆"/>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hcT-lU-vTT" firstAttribute="leading" secondItem="mjZ-hj-Sjq" secondAttribute="leadingMargin" constant="15" id="QdL-pi-ou1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hcT-lU-vTT" secondAttribute="trailing" constant="15" id="inD-ou-lDS"/>
+                            <constraint firstItem="hcT-lU-vTT" firstAttribute="top" secondItem="7Bs-vM-hX1" secondAttribute="bottom" constant="200" id="zr9-WZ-U8v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="选择图书馆" id="vuw-47-c0i"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w0V-kc-5uk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422.5" y="793.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7RE-3C-tVK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O5y-Fs-oXs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="noD-Yg-2n9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RAp-44-FNh" kind="relationship" relationship="rootViewController" id="ScG-C4-hKK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hlh-bC-70O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="794"/>
+        </scene>
+    </scenes>
+</document>
