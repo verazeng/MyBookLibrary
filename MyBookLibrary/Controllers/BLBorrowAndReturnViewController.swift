@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  BLBorrowAndReturnViewController.swift
 //  MyBookLibrary
 //
 //  Created by Heng Zeng on 12/8/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class BLBorrowAndReturnViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

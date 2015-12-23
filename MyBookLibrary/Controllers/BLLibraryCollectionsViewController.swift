@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  BLLibraryCollectionsViewController.swift
 //  MyBookLibrary
 //
 //  Created by Heng Zeng on 12/8/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class BLLibraryCollectionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

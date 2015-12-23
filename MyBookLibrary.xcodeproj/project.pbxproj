@@ -9,22 +9,21 @@
 /* Begin PBXBuildFile section */
 		B625F849AD95198AAC491720 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C40376661F6BE2EFB19295 /* libPods.a */; };
 		D27DAE5C1C16C23A00E02437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27DAE5B1C16C23A00E02437 /* AppDelegate.swift */; };
-		D27DAE5E1C16C23A00E02437 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27DAE5D1C16C23A00E02437 /* FirstViewController.swift */; };
-		D27DAE601C16C23A00E02437 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27DAE5F1C16C23A00E02437 /* SecondViewController.swift */; };
-		D27DAE631C16C23A00E02437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27DAE611C16C23A00E02437 /* Main.storyboard */; };
+		D27DAE631C16C23A00E02437 /* LibraryTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27DAE611C16C23A00E02437 /* LibraryTab.storyboard */; };
 		D27DAE651C16C23A00E02437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27DAE641C16C23A00E02437 /* Assets.xcassets */; };
 		D27DAE681C16C23A00E02437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27DAE661C16C23A00E02437 /* LaunchScreen.storyboard */; };
 		D27DAE731C16C23A00E02437 /* MyBookLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27DAE721C16C23A00E02437 /* MyBookLibraryTests.swift */; };
 		D27DAE7E1C16C23A00E02437 /* MyBookLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27DAE7D1C16C23A00E02437 /* MyBookLibraryUITests.swift */; };
 		D28341111C27F926001A2E76 /* SelectLibrary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D283410F1C27F926001A2E76 /* SelectLibrary.storyboard */; };
-		D28341191C28FECE001A2E76 /* MyBookLibrary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D28341171C28FECE001A2E76 /* MyBookLibrary.xcdatamodeld */; };
 		D283411B1C28FEF0001A2E76 /* BLLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283411A1C28FEF0001A2E76 /* BLLibraryManager.swift */; };
-		D283411D1C2904A0001A2E76 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D283411C1C2904A0001A2E76 /* CoreData.framework */; };
 		D283415D1C29067D001A2E76 /* BLSelectLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283415C1C29067D001A2E76 /* BLSelectLibraryViewController.swift */; };
-		D2DACFA91C2923CB001193C8 /* BLUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFA71C2923CB001193C8 /* BLUser+CoreDataProperties.swift */; };
 		D2DACFAA1C2923CB001193C8 /* BLUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFA81C2923CB001193C8 /* BLUser.swift */; };
-		D2DACFAD1C292629001193C8 /* BLLibrary+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFAB1C292629001193C8 /* BLLibrary+CoreDataProperties.swift */; };
 		D2DACFAE1C292629001193C8 /* BLLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFAC1C292629001193C8 /* BLLibrary.swift */; };
+		D2DACFB11C2A7338001193C8 /* BLUserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFB01C2A7338001193C8 /* BLUserRegisterViewController.swift */; };
+		D2DACFB31C2A8614001193C8 /* BLLibraryTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFB21C2A8614001193C8 /* BLLibraryTabViewController.swift */; };
+		D2DACFB51C2A87DD001193C8 /* BLUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFB41C2A87DD001193C8 /* BLUserInfoViewController.swift */; };
+		D2DACFB81C2A87FA001193C8 /* BLBorrowAndReturnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFB61C2A87FA001193C8 /* BLBorrowAndReturnViewController.swift */; };
+		D2DACFB91C2A87FA001193C8 /* BLLibraryCollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFB71C2A87FA001193C8 /* BLLibraryCollectionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +48,7 @@
 		A2C40376661F6BE2EFB19295 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27DAE581C16C23A00E02437 /* MyBookLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBookLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27DAE5B1C16C23A00E02437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D27DAE5D1C16C23A00E02437 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		D27DAE5F1C16C23A00E02437 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		D27DAE621C16C23A00E02437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D27DAE621C16C23A00E02437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LibraryTab.storyboard; sourceTree = "<group>"; };
 		D27DAE641C16C23A00E02437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D27DAE671C16C23A00E02437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D27DAE691C16C23A00E02437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,14 +59,17 @@
 		D27DAE7D1C16C23A00E02437 /* MyBookLibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookLibraryUITests.swift; sourceTree = "<group>"; };
 		D27DAE7F1C16C23A00E02437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D28341101C27F926001A2E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SelectLibrary.storyboard; sourceTree = "<group>"; };
-		D28341181C28FECE001A2E76 /* MyBookLibrary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBookLibrary.xcdatamodel; sourceTree = "<group>"; };
 		D283411A1C28FEF0001A2E76 /* BLLibraryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLLibraryManager.swift; path = DataManagers/BLLibraryManager.swift; sourceTree = "<group>"; };
 		D283411C1C2904A0001A2E76 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D283415C1C29067D001A2E76 /* BLSelectLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLSelectLibraryViewController.swift; path = Controllers/BLSelectLibraryViewController.swift; sourceTree = "<group>"; };
-		D2DACFA71C2923CB001193C8 /* BLUser+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BLUser+CoreDataProperties.swift"; path = "Models/BLUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D2DACFA81C2923CB001193C8 /* BLUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLUser.swift; path = Models/BLUser.swift; sourceTree = "<group>"; };
-		D2DACFAB1C292629001193C8 /* BLLibrary+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BLLibrary+CoreDataProperties.swift"; path = "Models/BLLibrary+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D2DACFAC1C292629001193C8 /* BLLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLLibrary.swift; path = Models/BLLibrary.swift; sourceTree = "<group>"; };
+		D2DACFAF1C2A4983001193C8 /* MyBookLibrary-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyBookLibrary-Bridging-Header.h"; sourceTree = "<group>"; };
+		D2DACFB01C2A7338001193C8 /* BLUserRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLUserRegisterViewController.swift; path = Controllers/BLUserRegisterViewController.swift; sourceTree = "<group>"; };
+		D2DACFB21C2A8614001193C8 /* BLLibraryTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLLibraryTabViewController.swift; path = Controllers/BLLibraryTabViewController.swift; sourceTree = "<group>"; };
+		D2DACFB41C2A87DD001193C8 /* BLUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLUserInfoViewController.swift; path = Controllers/BLUserInfoViewController.swift; sourceTree = "<group>"; };
+		D2DACFB61C2A87FA001193C8 /* BLBorrowAndReturnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLBorrowAndReturnViewController.swift; path = Controllers/BLBorrowAndReturnViewController.swift; sourceTree = "<group>"; };
+		D2DACFB71C2A87FA001193C8 /* BLLibraryCollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLLibraryCollectionsViewController.swift; path = Controllers/BLLibraryCollectionsViewController.swift; sourceTree = "<group>"; };
 		DFAE82C41010D4B206537B29 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D283411D1C2904A0001A2E76 /* CoreData.framework in Frameworks */,
 				B625F849AD95198AAC491720 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,13 +146,12 @@
 				D28341151C28FCEC001A2E76 /* Models */,
 				D28341121C28FBF8001A2E76 /* DataManagers */,
 				D27DAE5B1C16C23A00E02437 /* AppDelegate.swift */,
-				D27DAE5D1C16C23A00E02437 /* FirstViewController.swift */,
-				D27DAE5F1C16C23A00E02437 /* SecondViewController.swift */,
-				D27DAE611C16C23A00E02437 /* Main.storyboard */,
+				D27DAE611C16C23A00E02437 /* LibraryTab.storyboard */,
 				D283410F1C27F926001A2E76 /* SelectLibrary.storyboard */,
 				D27DAE641C16C23A00E02437 /* Assets.xcassets */,
 				D27DAE661C16C23A00E02437 /* LaunchScreen.storyboard */,
 				D27DAE691C16C23A00E02437 /* Info.plist */,
+				D2DACFAF1C2A4983001193C8 /* MyBookLibrary-Bridging-Header.h */,
 			);
 			path = MyBookLibrary;
 			sourceTree = "<group>";
@@ -187,11 +185,8 @@
 		D28341151C28FCEC001A2E76 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D2DACFAB1C292629001193C8 /* BLLibrary+CoreDataProperties.swift */,
 				D2DACFAC1C292629001193C8 /* BLLibrary.swift */,
-				D2DACFA71C2923CB001193C8 /* BLUser+CoreDataProperties.swift */,
 				D2DACFA81C2923CB001193C8 /* BLUser.swift */,
-				D28341171C28FECE001A2E76 /* MyBookLibrary.xcdatamodeld */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -200,6 +195,11 @@
 			isa = PBXGroup;
 			children = (
 				D283415C1C29067D001A2E76 /* BLSelectLibraryViewController.swift */,
+				D2DACFB01C2A7338001193C8 /* BLUserRegisterViewController.swift */,
+				D2DACFB21C2A8614001193C8 /* BLLibraryTabViewController.swift */,
+				D2DACFB71C2A87FA001193C8 /* BLLibraryCollectionsViewController.swift */,
+				D2DACFB61C2A87FA001193C8 /* BLBorrowAndReturnViewController.swift */,
+				D2DACFB41C2A87DD001193C8 /* BLUserInfoViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -315,7 +315,7 @@
 				D28341111C27F926001A2E76 /* SelectLibrary.storyboard in Resources */,
 				D27DAE681C16C23A00E02437 /* LaunchScreen.storyboard in Resources */,
 				D27DAE651C16C23A00E02437 /* Assets.xcassets in Resources */,
-				D27DAE631C16C23A00E02437 /* Main.storyboard in Resources */,
+				D27DAE631C16C23A00E02437 /* LibraryTab.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,15 +389,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D283415D1C29067D001A2E76 /* BLSelectLibraryViewController.swift in Sources */,
-				D2DACFA91C2923CB001193C8 /* BLUser+CoreDataProperties.swift in Sources */,
-				D28341191C28FECE001A2E76 /* MyBookLibrary.xcdatamodeld in Sources */,
-				D2DACFAD1C292629001193C8 /* BLLibrary+CoreDataProperties.swift in Sources */,
-				D27DAE601C16C23A00E02437 /* SecondViewController.swift in Sources */,
 				D2DACFAA1C2923CB001193C8 /* BLUser.swift in Sources */,
 				D283411B1C28FEF0001A2E76 /* BLLibraryManager.swift in Sources */,
 				D27DAE5C1C16C23A00E02437 /* AppDelegate.swift in Sources */,
-				D27DAE5E1C16C23A00E02437 /* FirstViewController.swift in Sources */,
+				D2DACFB81C2A87FA001193C8 /* BLBorrowAndReturnViewController.swift in Sources */,
+				D2DACFB31C2A8614001193C8 /* BLLibraryTabViewController.swift in Sources */,
+				D2DACFB11C2A7338001193C8 /* BLUserRegisterViewController.swift in Sources */,
 				D2DACFAE1C292629001193C8 /* BLLibrary.swift in Sources */,
+				D2DACFB91C2A87FA001193C8 /* BLLibraryCollectionsViewController.swift in Sources */,
+				D2DACFB51C2A87DD001193C8 /* BLUserInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,12 +433,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D27DAE611C16C23A00E02437 /* Main.storyboard */ = {
+		D27DAE611C16C23A00E02437 /* LibraryTab.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D27DAE621C16C23A00E02437 /* Base */,
 			);
-			name = Main.storyboard;
+			name = LibraryTab.storyboard;
 			sourceTree = "<group>";
 		};
 		D27DAE661C16C23A00E02437 /* LaunchScreen.storyboard */ = {
@@ -553,6 +553,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = verazeng.MyBookLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MyBookLibrary/MyBookLibrary-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -566,6 +567,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = verazeng.MyBookLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MyBookLibrary/MyBookLibrary-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -657,20 +659,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		D28341171C28FECE001A2E76 /* MyBookLibrary.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D28341181C28FECE001A2E76 /* MyBookLibrary.xcdatamodel */,
-			);
-			currentVersion = D28341181C28FECE001A2E76 /* MyBookLibrary.xcdatamodel */;
-			name = MyBookLibrary.xcdatamodeld;
-			path = Models/MyBookLibrary.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = D27DAE501C16C23A00E02437 /* Project object */;
 }

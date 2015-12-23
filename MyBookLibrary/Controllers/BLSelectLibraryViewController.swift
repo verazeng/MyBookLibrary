@@ -23,6 +23,31 @@ class BLSelectLibraryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func enterExistLibrary(sender: UIButton) {
+        let query = BLLibrary.query()
+        query.whereKey("name", equalTo: self.libraryName.text!)
+        query.findObjectsInBackgroundWithBlock { (libraries, error) in
+            guard libraries.count > 0 else {
+                return
+            }
+            
+            let library = libraries.first as! BLLibrary
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.loadMainLibraryTabVC(library)
+        }
+    }
+    
+    @IBAction func createNewLibrary(sender: UIButton) {
+        let library = BLLibrary()
+        library.name = libraryName.text!
+        library.saveInBackgroundWithBlock { (success: Bool, error: NSError!) -> Void in
+            let storyBoard = UIStoryboard.init(name: "SelectLibrary", bundle: nil)
+            let registerVC = storyBoard.instantiateViewControllerWithIdentifier("UserRegister") as! BLUserRegisterViewController
+            registerVC.registerAsAdmin = true
+            registerVC.library = library
+            self.navigationController?.showViewController(registerVC, sender: sender)
+        }
+    }
 
     /*
     // MARK: - Navigation

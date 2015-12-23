@@ -7,15 +7,11 @@
 //
 
 import Foundation
-import CoreData
 
-@objc enum AuthorityType : Int {
-    case eAuthorityAdmin    = 0
-    case eAuthorityCommon   = 1
-}
-
-class BLUser: NSManagedObject {
-    @NSManaged var authorityType : AuthorityType
-// Insert code here to add functionality to your managed object subclass
+class BLUser: AVUser {
+    @NSManaged var libraryID : String
     
+    override static func parseClassName() -> String! {
+        return "_User"
+    }
 }

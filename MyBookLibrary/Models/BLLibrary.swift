@@ -7,11 +7,14 @@
 //
 
 import Foundation
-import CoreData
 
+class BLLibrary: AVObject, AVSubclassing {
 
-class BLLibrary: NSManagedObject {
-
-// Insert code here to add functionality to your managed object subclass
-
+    @NSManaged var name : String
+    @NSManaged var books : AVRelation
+    @NSManaged var users : AVRelation
+    
+    class func parseClassName() -> String? {
+        return "BLLibrary"
+    }
 }
