@@ -9,8 +9,6 @@
 import Foundation
 
 class BLUser: AVUser {
-    @NSManaged var libraryID : String
-    
     override static func parseClassName() -> String! {
         return "_User"
     }

@@ -8,7 +8,6 @@
 
 import UIKit
 
-@objc
 class BLLibraryTabViewController: UITabBarController {
     
     var library : BLLibrary!

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B625F849AD95198AAC491720 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C40376661F6BE2EFB19295 /* libPods.a */; };
+		D227E8CF1C34D43800E9576F /* BLUserInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227E8CE1C34D43800E9576F /* BLUserInfoTableViewController.swift */; };
 		D27DAE5C1C16C23A00E02437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27DAE5B1C16C23A00E02437 /* AppDelegate.swift */; };
 		D27DAE631C16C23A00E02437 /* LibraryTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27DAE611C16C23A00E02437 /* LibraryTab.storyboard */; };
 		D27DAE651C16C23A00E02437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27DAE641C16C23A00E02437 /* Assets.xcassets */; };
@@ -17,11 +18,14 @@
 		D28341111C27F926001A2E76 /* SelectLibrary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D283410F1C27F926001A2E76 /* SelectLibrary.storyboard */; };
 		D283411B1C28FEF0001A2E76 /* BLLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283411A1C28FEF0001A2E76 /* BLLibraryManager.swift */; };
 		D283415D1C29067D001A2E76 /* BLSelectLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283415C1C29067D001A2E76 /* BLSelectLibraryViewController.swift */; };
+		D288A5581C33D67000C2146F /* LoginAndRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D288A5561C33D67000C2146F /* LoginAndRegister.storyboard */; };
+		D288A55A1C33D88100C2146F /* BLUserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D288A5591C33D88100C2146F /* BLUserLoginViewController.swift */; };
+		D288A5611C33DD5200C2146F /* BLCreateLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D288A5601C33DD5200C2146F /* BLCreateLibraryViewController.swift */; };
+		D288A56A1C34CD0100C2146F /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D288A5681C34CD0100C2146F /* UIViewController+Extensions.swift */; };
 		D2DACFAA1C2923CB001193C8 /* BLUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFA81C2923CB001193C8 /* BLUser.swift */; };
 		D2DACFAE1C292629001193C8 /* BLLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFAC1C292629001193C8 /* BLLibrary.swift */; };
 		D2DACFB11C2A7338001193C8 /* BLUserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFB01C2A7338001193C8 /* BLUserRegisterViewController.swift */; };
 		D2DACFB31C2A8614001193C8 /* BLLibraryTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFB21C2A8614001193C8 /* BLLibraryTabViewController.swift */; };
-		D2DACFB51C2A87DD001193C8 /* BLUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFB41C2A87DD001193C8 /* BLUserInfoViewController.swift */; };
 		D2DACFB81C2A87FA001193C8 /* BLBorrowAndReturnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFB61C2A87FA001193C8 /* BLBorrowAndReturnViewController.swift */; };
 		D2DACFB91C2A87FA001193C8 /* BLLibraryCollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DACFB71C2A87FA001193C8 /* BLLibraryCollectionsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +50,7 @@
 /* Begin PBXFileReference section */
 		0A69AFF73B14A5C827BA5964 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A2C40376661F6BE2EFB19295 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D227E8CE1C34D43800E9576F /* BLUserInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLUserInfoTableViewController.swift; path = Controllers/BLUserInfoTableViewController.swift; sourceTree = "<group>"; };
 		D27DAE581C16C23A00E02437 /* MyBookLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBookLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27DAE5B1C16C23A00E02437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D27DAE621C16C23A00E02437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LibraryTab.storyboard; sourceTree = "<group>"; };
@@ -62,12 +67,15 @@
 		D283411A1C28FEF0001A2E76 /* BLLibraryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLLibraryManager.swift; path = DataManagers/BLLibraryManager.swift; sourceTree = "<group>"; };
 		D283411C1C2904A0001A2E76 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D283415C1C29067D001A2E76 /* BLSelectLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLSelectLibraryViewController.swift; path = Controllers/BLSelectLibraryViewController.swift; sourceTree = "<group>"; };
+		D288A5571C33D67000C2146F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginAndRegister.storyboard; sourceTree = "<group>"; };
+		D288A5591C33D88100C2146F /* BLUserLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLUserLoginViewController.swift; path = Controllers/BLUserLoginViewController.swift; sourceTree = "<group>"; };
+		D288A5601C33DD5200C2146F /* BLCreateLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLCreateLibraryViewController.swift; path = Controllers/BLCreateLibraryViewController.swift; sourceTree = "<group>"; };
+		D288A5681C34CD0100C2146F /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "Extensions/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		D2DACFA81C2923CB001193C8 /* BLUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLUser.swift; path = Models/BLUser.swift; sourceTree = "<group>"; };
 		D2DACFAC1C292629001193C8 /* BLLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLLibrary.swift; path = Models/BLLibrary.swift; sourceTree = "<group>"; };
 		D2DACFAF1C2A4983001193C8 /* MyBookLibrary-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyBookLibrary-Bridging-Header.h"; sourceTree = "<group>"; };
 		D2DACFB01C2A7338001193C8 /* BLUserRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLUserRegisterViewController.swift; path = Controllers/BLUserRegisterViewController.swift; sourceTree = "<group>"; };
 		D2DACFB21C2A8614001193C8 /* BLLibraryTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLLibraryTabViewController.swift; path = Controllers/BLLibraryTabViewController.swift; sourceTree = "<group>"; };
-		D2DACFB41C2A87DD001193C8 /* BLUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLUserInfoViewController.swift; path = Controllers/BLUserInfoViewController.swift; sourceTree = "<group>"; };
 		D2DACFB61C2A87FA001193C8 /* BLBorrowAndReturnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLBorrowAndReturnViewController.swift; path = Controllers/BLBorrowAndReturnViewController.swift; sourceTree = "<group>"; };
 		D2DACFB71C2A87FA001193C8 /* BLLibraryCollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLLibraryCollectionsViewController.swift; path = Controllers/BLLibraryCollectionsViewController.swift; sourceTree = "<group>"; };
 		DFAE82C41010D4B206537B29 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,12 +150,14 @@
 		D27DAE5A1C16C23A00E02437 /* MyBookLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				D288A5621C34C3B800C2146F /* Extensions */,
 				D283415B1C290647001A2E76 /* Controllers */,
 				D28341151C28FCEC001A2E76 /* Models */,
 				D28341121C28FBF8001A2E76 /* DataManagers */,
 				D27DAE5B1C16C23A00E02437 /* AppDelegate.swift */,
 				D27DAE611C16C23A00E02437 /* LibraryTab.storyboard */,
 				D283410F1C27F926001A2E76 /* SelectLibrary.storyboard */,
+				D288A5561C33D67000C2146F /* LoginAndRegister.storyboard */,
 				D27DAE641C16C23A00E02437 /* Assets.xcassets */,
 				D27DAE661C16C23A00E02437 /* LaunchScreen.storyboard */,
 				D27DAE691C16C23A00E02437 /* Info.plist */,
@@ -194,14 +204,64 @@
 		D283415B1C290647001A2E76 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D283415C1C29067D001A2E76 /* BLSelectLibraryViewController.swift */,
-				D2DACFB01C2A7338001193C8 /* BLUserRegisterViewController.swift */,
+				D288A55F1C33D95B00C2146F /* UserInfo */,
+				D288A55E1C33D8F700C2146F /* BorrowAndReturn */,
+				D288A55D1C33D8E800C2146F /* LibraryCollection */,
+				D288A55C1C33D89F00C2146F /* SelectLibrary */,
+				D288A55B1C33D88900C2146F /* LoginAndRegister */,
 				D2DACFB21C2A8614001193C8 /* BLLibraryTabViewController.swift */,
-				D2DACFB71C2A87FA001193C8 /* BLLibraryCollectionsViewController.swift */,
-				D2DACFB61C2A87FA001193C8 /* BLBorrowAndReturnViewController.swift */,
-				D2DACFB41C2A87DD001193C8 /* BLUserInfoViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D288A55B1C33D88900C2146F /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				D2DACFB01C2A7338001193C8 /* BLUserRegisterViewController.swift */,
+				D288A5591C33D88100C2146F /* BLUserLoginViewController.swift */,
+			);
+			name = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		D288A55C1C33D89F00C2146F /* SelectLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D283415C1C29067D001A2E76 /* BLSelectLibraryViewController.swift */,
+				D288A5601C33DD5200C2146F /* BLCreateLibraryViewController.swift */,
+			);
+			name = SelectLibrary;
+			sourceTree = "<group>";
+		};
+		D288A55D1C33D8E800C2146F /* LibraryCollection */ = {
+			isa = PBXGroup;
+			children = (
+				D2DACFB71C2A87FA001193C8 /* BLLibraryCollectionsViewController.swift */,
+			);
+			name = LibraryCollection;
+			sourceTree = "<group>";
+		};
+		D288A55E1C33D8F700C2146F /* BorrowAndReturn */ = {
+			isa = PBXGroup;
+			children = (
+				D2DACFB61C2A87FA001193C8 /* BLBorrowAndReturnViewController.swift */,
+			);
+			name = BorrowAndReturn;
+			sourceTree = "<group>";
+		};
+		D288A55F1C33D95B00C2146F /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D227E8CE1C34D43800E9576F /* BLUserInfoTableViewController.swift */,
+			);
+			name = UserInfo;
+			sourceTree = "<group>";
+		};
+		D288A5621C34C3B800C2146F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D288A5681C34CD0100C2146F /* UIViewController+Extensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +375,7 @@
 				D28341111C27F926001A2E76 /* SelectLibrary.storyboard in Resources */,
 				D27DAE681C16C23A00E02437 /* LaunchScreen.storyboard in Resources */,
 				D27DAE651C16C23A00E02437 /* Assets.xcassets in Resources */,
+				D288A5581C33D67000C2146F /* LoginAndRegister.storyboard in Resources */,
 				D27DAE631C16C23A00E02437 /* LibraryTab.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,15 +450,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D283415D1C29067D001A2E76 /* BLSelectLibraryViewController.swift in Sources */,
+				D288A55A1C33D88100C2146F /* BLUserLoginViewController.swift in Sources */,
 				D2DACFAA1C2923CB001193C8 /* BLUser.swift in Sources */,
 				D283411B1C28FEF0001A2E76 /* BLLibraryManager.swift in Sources */,
+				D227E8CF1C34D43800E9576F /* BLUserInfoTableViewController.swift in Sources */,
 				D27DAE5C1C16C23A00E02437 /* AppDelegate.swift in Sources */,
 				D2DACFB81C2A87FA001193C8 /* BLBorrowAndReturnViewController.swift in Sources */,
 				D2DACFB31C2A8614001193C8 /* BLLibraryTabViewController.swift in Sources */,
 				D2DACFB11C2A7338001193C8 /* BLUserRegisterViewController.swift in Sources */,
+				D288A5611C33DD5200C2146F /* BLCreateLibraryViewController.swift in Sources */,
+				D288A56A1C34CD0100C2146F /* UIViewController+Extensions.swift in Sources */,
 				D2DACFAE1C292629001193C8 /* BLLibrary.swift in Sources */,
 				D2DACFB91C2A87FA001193C8 /* BLLibraryCollectionsViewController.swift in Sources */,
-				D2DACFB51C2A87DD001193C8 /* BLUserInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +519,14 @@
 				D28341101C27F926001A2E76 /* Base */,
 			);
 			name = SelectLibrary.storyboard;
+			sourceTree = "<group>";
+		};
+		D288A5561C33D67000C2146F /* LoginAndRegister.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D288A5571C33D67000C2146F /* Base */,
+			);
+			name = LoginAndRegister.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

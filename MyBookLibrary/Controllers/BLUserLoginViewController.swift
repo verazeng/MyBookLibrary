@@ -1,39 +1,40 @@
 //
-//  BLUserInfoViewController.swift
+//  BLUserLoginViewController.swift
 //  MyBookLibrary
 //
-//  Created by Heng Zeng on 12/23/15.
+//  Created by Heng Zeng on 12/30/15.
 //  Copyright © 2015 verazeng. All rights reserved.
 //
 
 import UIKit
 
-class BLUserInfoViewController: UIViewController {
+class BLUserLoginViewController: UIViewController {
 
-    @IBOutlet weak var userName: UILabel!
-    @IBOutlet weak var libraryName: UILabel!
+    @IBOutlet weak var userName: UITextField!
+    @IBOutlet weak var password: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let tabVC = self.tabBarController as! BLLibraryTabViewController
-        self.libraryName.text = tabVC.library.name
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func changeLibrary(sender: UIButton) {
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appDelegate.loadSelectLibraryVC()
+
+    @IBAction func login(sender: UIButton) {
+        BLUser.logInWithUsernameInBackground(userName.text, password: password.text) { (user, error) -> Void in
+            guard error == nil else {
+                print(error)
+                self.showAlertView(error.userInfo["error"] as! String)
+                return
+            }
+            
+            self.navigationController?.popViewControllerAnimated(true)
+        }
     }
-    
-    @IBAction func logout(sender: UIButton) {
-        
-    }
-    
 
     /*
     // MARK: - Navigation

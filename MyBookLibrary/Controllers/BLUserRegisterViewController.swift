@@ -8,24 +8,15 @@
 
 import UIKit
 
-@objc
 class BLUserRegisterViewController: UIViewController {
 
-    @IBOutlet weak var libraryID: UILabel!
-    @IBOutlet weak var libraryName: UILabel!
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var phoneNumber: UITextField!
     
-    var registerAsAdmin = false
-    var library : BLLibrary!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        libraryID.text = library.objectId
-        libraryName.text = library.name
     }
     
     @IBAction func registerUser(sender: UIButton) {
@@ -34,15 +25,13 @@ class BLUserRegisterViewController: UIViewController {
         user.password = password.text!
         user.email = email.text!
         user.mobilePhoneNumber = phoneNumber.text!
-        user.libraryID = library.objectId
         user.signUpInBackgroundWithBlock { (successed: Bool, error: NSError!) -> Void in
             guard successed else {
                 print(error)
                 return
             }
             
-            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            appDelegate.loadMainLibraryTabVC(self.library)
+            self.navigationController?.popViewControllerAnimated(true)
         }
     }
 }
